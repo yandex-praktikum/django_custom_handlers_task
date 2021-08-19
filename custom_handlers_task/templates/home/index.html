@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Главная{% endblock %}
+{% block content %}
+    <h1>Главная с кнопкой но без csrf_token</h1>
+    <form method="post" action="{% url 'home:index' %}">
+      <button type="submit" class="btn btn-primary">
+      Push me and then just touch me!!!
+    </button>
+
+    </form>
+{% endblock %}

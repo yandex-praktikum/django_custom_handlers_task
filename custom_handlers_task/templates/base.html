@@ -1,0 +1,15 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+  <head>    
+    <meta charset="utf-8"> 
+
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>	 
+    <main>
+      <div class="container py-5">
+        {% block content %}Контент не подвезли :({% endblock %}
+      </div>
+    </main>	 
+  </body>
+</html>
